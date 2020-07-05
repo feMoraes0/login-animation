@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
 const App = () => {
+  const location = useLocation();
   return (
     <>
-      <Router>
-        <Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
           <Route path='/' exact>
             <Login />
           </Route>
@@ -15,7 +17,7 @@ const App = () => {
             <Register />
           </Route>
         </Switch>
-      </Router>
+      </AnimatePresence>
     </>
   );
 }
