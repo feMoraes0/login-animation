@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsArrowLeft } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -16,7 +18,9 @@ const Login = () => {
             <input type="text"/>
           </fieldset>
           <button type="submit">Sign in</button>
-          <button type='button'>Register now</button>
+          <Link to='/register'>
+            <BsArrowLeft /> Register now
+          </Link>
         </form>
       </div>
     </main>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { BsArrowRight } from 'react-icons/bs';
 
 const Register = () => {
   return (
@@ -19,7 +21,9 @@ const Register = () => {
             <input type="text"/>
           </fieldset>
           <button type="submit">Sign up</button>
-          <button type='button'>Sign in now</button>
+          <Link to='/'>
+            Sign in now <BsArrowRight />
+          </Link>
         </form>
       </div>
       <div className='section background-section' />
