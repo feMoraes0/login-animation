@@ -1,13 +1,93 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+div.section {
+  width: 50vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main div.background-section {
+  background-image: url('./assets/background.png');
+  background-size:  100vw 100vh;
+}
+
+main div.form-section {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30vw;
+}
+
+form h1 {
+  margin-bottom: 40px;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+form fieldset input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0,0,0,.15);
+}
+
+form button[type=submit] {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background-color: #5390d9;
+  color: #FFF;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+form button[type=button] {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+button:focus, input:focus {
+  outline: none;
 }
