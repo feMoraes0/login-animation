@@ -1,5 +1,9 @@
 <h1 align="center">Login Animation</h1>
 
+<p align="center">
+  <img width="500" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/login-animation/print-001.gif">
+</p>
+
 ## :rocket: Knowledges
  - `ReactJS`
  - `Typescript`
